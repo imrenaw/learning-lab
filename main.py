@@ -1,6 +1,4 @@
-userInput = input("Just write some text: ")
+import numpy as np
 
-file = open("text.txt", 'a')
-file.write(userInput + '\n')
-
-file.close()
+np_array = np.array([1, 2, 3])
+print(np_array + 10)  
