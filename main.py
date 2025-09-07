@@ -1,8 +1,6 @@
-f = open("ml_data.txt", "x")
-f.write("\nPython")
-f.write("\nNumpy")
-f.write("\nPandas")
+userInput = input("Just write some text: ")
 
-with open("ml_data.txt", "r") as f:
-    for line in f:
-        print(line)
+file = open("text.txt", 'a')
+file.write(userInput + '\n')
+
+file.close()
